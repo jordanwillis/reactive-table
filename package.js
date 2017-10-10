@@ -24,6 +24,7 @@ Package.on_use(function (api) {
     api.add_files('lib/reactive_table.js', 'client');
     api.add_files('lib/reactive_table.css', 'client');
     api.add_files('lib/sort.js', 'client');
+    api.add_files('lib/export.js', 'client');
     api.add_files('lib/filter.js', ['client', 'server']);
     api.add_files('lib/server.js', 'server');
 
@@ -47,6 +48,7 @@ Package.on_test(function (api) {
     api.add_files('lib/reactive_table.js', 'client');
     api.add_files('lib/reactive_table.css', 'client');
     api.add_files('lib/sort.js', 'client');
+    api.add_files('lib/export.js', 'client');
     api.add_files('lib/filter.js', ['client', 'server']);
     api.add_files('lib/server.js', 'server');
 
@@ -59,12 +61,12 @@ Package.on_test(function (api) {
     api.add_files('test/test_settings.js', 'client');
     api.add_files('test/test_fields_tmpl.html', 'client');
     api.add_files('test/test_fields.js', 'client');
-  
+
     api.use('accounts-password@1.0.6', ['client', 'server']);
     api.add_files('test/test_reactivity_server.js', 'server');
     api.add_files('test/test_reactivity.html', 'client');
     api.add_files('test/test_reactivity.js', 'client');
-  
+
     api.add_files('test/test_sorting.js', 'client');
     api.add_files('test/test_filtering_server.js', 'server');
     api.add_files('test/test_filtering.js', 'client');
